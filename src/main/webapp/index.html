@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<title>My AngularJS App</title>
+<link rel="stylesheet" href="css/app.css" />
+<!-- 最新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/docs.css" />
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+	<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="../" class="navbar-brand">Bootstrap</a>
+			</div>
+			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="../getting-started">起步</a></li>
+					<li><a href="../css">CSS</a></li>
+					<li><a href="../components">组件</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../about">关于</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="bs-header" id="content">
+		<div class="container">
+			<h2>起步</h2>
+		</div>
+	</div>
+
+	<div class="container bs-docs-container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="bs-sidebar hidden-print" role="complementary">
+					<ul class="nav bs-sidenav">
+						<li><a href="#download">下载Bootstrap</a>
+						<li><a href="#whats-included">包含了哪些文件</a>
+						<li><a href="#template">基本模版</a></li>
+						<li><a href="#examples">案例</a></li>
+						<li><a href="#disable-responsive">禁用响应式布局</a></li>
+						<li><a href="#migration">从2.x升级到3.0版本</a>
+						<li><a href="#browsers">浏览器支持</a></li>
+						<li><a href="#third-parties">对第三方组件的支持</a></li>
+						<li><a href="#accessibility">可访问性</a></li>
+						<li><a href="#license-faqs">许可证FAQ</a></li>
+						<li><a href="#customizing">定制Bootstrap</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9" role="main">
+				<div class="bs-docs-section">
+					<ul class="menu">
+						<li><a href="#/view1">view1</a></li>
+						<li><a href="#/view2">view2</a></li>
+					</ul>
+
+					<div ng-view></div>
+
+					<div>
+						Angular seed app: v<span app-version></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+			<script src="lib/angular/angular.js"></script>
+			<script src="lib/angular/angular-route.js"></script>
+			<script src="lib/angular/angular-resource.js"></script>
+			<script src="js/app.js"></script>
+			<script src="js/services.js"></script>
+			<script src="js/controllers.js"></script>
+			<script src="js/filters.js"></script>
+			<script src="js/directives.js"></script>
+
+			<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+			<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+
+			<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+			<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>
